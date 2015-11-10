@@ -15,6 +15,10 @@ jefferson@Inspiron-5547:~/workspace/classes/dagora/mongodb/class1$
 
 ## Contando os restaurantes
 
+Inspiron-5547(mongod-3.0.7) test> use be-mean
+
+switched to db be-mean
+
 Inspiron-5547(mongod-3.0.7) be-mean> db.restaurants.find({}).count()
 
 25359
