@@ -1,7 +1,7 @@
 # MongoDB - Aula 03 - Exercício
 Autor: Jefferson Andrade Agostinho
 
-## 1. Lista de pokemons com o height `menor que` 0.5
+## 1. Lista de pokemons com o height `MENOR QUE` 0.5
 
 ```
 dev(mongod-3.0.7) be-mean-instagram> var q = {height: {$lt: 0.5}}
@@ -34,7 +34,7 @@ dev(mongod-3.0.7) be-mean-instagram> db.pokemons.find(q)
 Fetched 3 record(s) in 1ms
 ```
 
-## 2. Lista de pokemons com o height **maior ou igual que** 0.5
+## 2. Lista de pokemons com o height `MAIOR OU IGUAL QUE` 0.5
 
 ```
 dev(mongod-3.0.7) be-mean-instagram> var q = {height: {$gte: 0.5}}
@@ -58,7 +58,7 @@ dev(mongod-3.0.7) be-mean-instagram> db.pokemons.find(q)
 Fetched 2 record(s) in 5ms
 ```
 
-## 3. Lista de pokemons com o height **menor ou igual que** 0.5 **e** do tipo grama
+## 3. Lista de pokemons com o height `MENOR OU IGUAL QUE` 0.5 `E` do tipo grama
 
 ```
 dev(mongod-3.0.7) be-mean-instagram> var q = {$and: [{height : {$lte : 0.5 }}, {type : 'grama'}] }
@@ -74,7 +74,7 @@ dev(mongod-3.0.7) be-mean-instagram> db.pokemons.find(q)
 Fetched 1 record(s) in 2ms
 ```
 
-## 4. Lista de pokemons com o name Pikachu **ou** com attack **menor ou igual que** 0.5
+## 4. Lista de pokemons com o name Pikachu `OU` com attack `MENOR OU IGUAL` QUE 0.5
 
 ```
 dev(mongod-3.0.7) be-mean-instagram> var q = {$or: [{name: 'Pikachu'}, {attack: {$lte: 0.5}}]}
@@ -90,7 +90,7 @@ dev(mongod-3.0.7) be-mean-instagram> db.pokemons.find(q)
 Fetched 1 record(s) in 1ms
 ```
 
-## 5. Lista de pokemons com o attack **maior ou igual que** 48 **e** com height **menor ou igual que** 0.5
+## 5. Lista de pokemons com o attack `MAIOR OU IGUAL QUE` 48 `E` com height `MENOR OU IGUAL QUE` 0.5
 
 ```
 dev(mongod-3.0.7) be-mean-instagram> var q = {$and: [{attack : {$gte : 48 }}, {height: {$lte: 0.5}}] }
