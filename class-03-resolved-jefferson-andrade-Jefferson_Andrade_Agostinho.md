@@ -1,7 +1,7 @@
 # MongoDB - Aula 03 - Exercício
 Autor: Jefferson Andrade Agostinho
 
-## 1. Lista de pokemons com o height **menor que** 0.5
+## 1. Lista de pokemons com o height `menor que` 0.5
 
 ```
 dev(mongod-3.0.7) be-mean-instagram> var q = {height: {$lt: 0.5}}
