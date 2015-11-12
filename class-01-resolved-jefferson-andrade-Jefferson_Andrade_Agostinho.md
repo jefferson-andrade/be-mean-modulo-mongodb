@@ -1,5 +1,5 @@
 # MongoDB - Aula 01 - Exercício
-autor: Jefferson Andrade Agostinho
+Autor: Jefferson Andrade Agostinho
 
 ## Importando os restaurantes
 
@@ -16,5 +16,5 @@ mongoimport --db be-mean --collection restaurants --drop --file restaurants.json
 use be-mean
 switched to db be-mean
 db.restaurants.find({}).count()
-25359 
+25359
 ```
