@@ -1,5 +1,5 @@
 # MongoDB - Aula 01 - Exercício
-Autor: Jefferson Andrade Agostinho
+**Autor**: Jefferson Andrade Agostinho
 
 ## Importando os restaurantes
 

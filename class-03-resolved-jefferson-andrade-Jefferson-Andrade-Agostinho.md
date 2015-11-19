@@ -1,5 +1,5 @@
 # MongoDB - Aula 03 - Exercício
-Autor: Jefferson Andrade Agostinho
+**Autor**: Jefferson Andrade Agostinho
 
 ## 1. Lista de pokemons com o height `MENOR QUE` 0.5
 
