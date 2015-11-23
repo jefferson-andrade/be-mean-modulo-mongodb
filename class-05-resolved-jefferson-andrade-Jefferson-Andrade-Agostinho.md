@@ -8,13 +8,13 @@ mongodb git:(master) ✗ mongoimport --host 127.0.0.1 --db be-mean-instagram --c
 2015-11-23T17:35:19.806-0200	connected to: 127.0.0.1
 2015-11-23T17:35:19.807-0200	dropping: be-mean-instagram.restaurants
 2015-11-23T17:35:21.035-0200	imported 25359 documents
+```
 
-
+```
 mongodb git:(master) ✗ mongoimport --host 127.0.0.1 --db be-mean-instagram --collection pokemons --drop --file pokemons_data.json
 2015-11-23T17:34:52.224-0200	connected to: 127.0.0.1
 2015-11-23T17:34:52.225-0200	dropping: be-mean-instagram.pokemons
 2015-11-23T17:34:52.249-0200	imported 610 documents
-
 ```
 
 ## 2. Distinct por `cuisine` na collection restaurantes
@@ -207,7 +207,9 @@ dev(mongod-3.0.7) be-mean-instagram> db.pokemons.find().limit(5).skip(5*0)
   ]
 }
 Fetched 5 record(s) in 3ms
+```
 
+```
 dev(mongod-3.0.7) be-mean-instagram> db.pokemons.find().limit(5).skip(5*1)
 {
   "_id": ObjectId("564b1dad25337263280d047f"),
@@ -279,7 +281,9 @@ dev(mongod-3.0.7) be-mean-instagram> db.pokemons.find().limit(5).skip(5*1)
   ]
 }
 Fetched 5 record(s) in 2ms
+```
 
+```
 dev(mongod-3.0.7) be-mean-instagram> db.pokemons.find().limit(5).skip(5*2)
 {
   "_id": ObjectId("564b1dae25337263280d0486"),
@@ -351,7 +355,6 @@ dev(mongod-3.0.7) be-mean-instagram> db.pokemons.find().limit(5).skip(5*2)
   ]
 }
 Fetched 5 record(s) in 8ms
-
 ```
 
 ## 5. Group ou aggregate contando a quantidade de pokemons de cada tipo
